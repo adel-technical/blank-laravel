@@ -1,8 +1,8 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-primary">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link bg-primary">
-        <img src="{{ asset( 'assets/img/logo_empire2.jpg' ) }}" alt="Sporst Logo" class="brand-image elevation-3"
+    <a href="#" class="brand-link bg-primary d-flex justify-content-center">
+        <img src="{{ asset( 'assets/img/OL06ZG0.jpg' ) }}" alt="Sporst Logo" class="brand-image elevation-3"
             style="opacity: .8">
         {{-- <span class="brand-text font-weight-light">AdminLTE 3</span> --}}
     </a>
