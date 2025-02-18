@@ -1,4 +1,4 @@
-@props(['titlePage', 'page'])
+@props(['titlePage'])
 <!-- Content Header -->
 <section class="content-header">
     <div class="container-fluid">

@@ -8,7 +8,7 @@
         }
 
         .bg-image {
-            background-image: url("{{ asset( 'assets/img/brand2.jpg' ) }}");
+            background-image: url("{{ asset('storage/' . \App\Models\Setting::get('app_brand') ?? 'assets/img/brand2.jpg') }}");
             background-size: cover;
             background-position: center center;
         }

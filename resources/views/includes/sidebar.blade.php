@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-primary">
     <!-- Brand Logo -->
     <a href="#" class="brand-link bg-primary d-flex justify-content-center">
-        <img src="{{ asset( 'assets/img/OL06ZG0.jpg' ) }}" alt="Sporst Logo" class="brand-image elevation-3"
+        <img src="{{ asset( 'storage/' . \App\Models\Setting::get('app_logo') ?? 'assets/img/OL06ZG0.jpg' ) }}" alt="Sporst Logo" class="brand-image elevation-3"
             style="opacity: .8">
         {{-- <span class="brand-text font-weight-light">AdminLTE 3</span> --}}
     </a>
@@ -89,6 +89,14 @@
                     </ul>
                 </li>
                 @endcan
+                <li class="nav-item has-treeview">
+                    <a href="{{ url('/settings') }}" class="nav-link {{ Request::is('settings*') ? 'active' : '' }}">
+                        <i class="fas fa-cog"></i>
+                        <p>
+                            الاعدادات
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="nav-icon fas fa-sign-out-alt"></i>

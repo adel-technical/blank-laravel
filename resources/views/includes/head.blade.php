@@ -5,7 +5,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ \App\Models\Setting::get('app_name') ?? config('app.name', 'Laravel') }}</title>
     <link rel="icon" type="image/jpg" href="{{ asset( 'assets/img/logo_empire2.jpg' ) }}">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
