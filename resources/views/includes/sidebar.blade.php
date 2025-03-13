@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-primary">
     <!-- Brand Logo -->
     <a href="#" class="brand-link bg-primary d-flex justify-content-center">
-        <img src="{{ asset( 'storage/' . \App\Models\Setting::get('app_logo') ?? 'assets/img/OL06ZG0.jpg' ) }}" alt="Sporst Logo" class="brand-image elevation-3"
+        <img src="{{ asset( 'storage/' . \App\Models\Setting::get('app_logo') ?? 'assets/img/OL06ZG0.jpg' ) }}" alt="{{ \App\Models\Setting::get('app_name') }} Logo" class="brand-image elevation-3"
             style="opacity: .8">
         {{-- <span class="brand-text font-weight-light">AdminLTE 3</span> --}}
     </a>
