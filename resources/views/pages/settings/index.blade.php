@@ -11,7 +11,7 @@
                             @csrf
 
                             <div class="mb-3">
-                                <label for="app_name" class="form-label">اسم الموقع</label>
+                                <label for="app_name" class="form-label">اسم المشروع</label>
                                 <input type="text" name="app_name" class="form-control" value="{{ \App\Models\Setting::get('app_name') }}">
                             </div>
                                 
